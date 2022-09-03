@@ -211,7 +211,7 @@
             <li class="work-item">
               <img
                 class="work-img"
-                src="./images/img.jpg"
+                src="./images/img_pc_updated.jpg"
                 alt="изображение планшета"
                 width="370"
                 height="294"
@@ -221,7 +221,7 @@
             <li class="work-item">
               <img
                 class="work-img"
-                src="./images/img-1.jpg"
+                src="./images/img_phone_updated.jpg"
                 alt="изображение телефона"
                 width="370"
                 height="294"
@@ -231,7 +231,7 @@
             <li class="work-item">
               <img
                 class="work-img"
-                src="./images/img-2.jpg"
+                src="./images/img_web_updated.jpg"
                 alt="изображение цветовой палитры"
                 width="370"
                 height="294"
@@ -247,13 +247,37 @@
           <h2 class="section__title title">Наша команда</h2>
           <ul class="our-team list">
             <li class="our-team__item">
-              <img
-                class="our-team__img"
-                src="./images/img-3.jpg"
-                alt="фотография прожект менеджера"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile/Team-first-mobile-1.jpg 1x,
+                    ./images/mobile/Team-first-mobile-2.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/Team-first-tablet-1.jpg 1x,
+                    ./images/tablet/Team-first-tablet-2.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/igor_demyanenko_updated.jpg 1x,
+                    ./images/Team-first-PC-2.jpg         2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <!--<img
+                  class="our-team__img"
+                  src="./images/mobile/Team-first-mobile-1.jpg"
+                  alt="фотография прожект менеджера"
+                  width="270"
+                  height="260"
+                />-->
+              </picture>
               <div class="our-team__content">
                 <h3 class="our-team__title">Игорь Демьяненко</h3>
                 <p class="our-team__tex">Product Designer</p>
@@ -302,13 +326,37 @@
               </div>
             </li>
             <li class="our-team__item">
-              <img
-                class="our-team__img"
-                src="./images/img-4.jpg"
-                alt="фотография фронденд разработчика"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/olga_repina_updated.jpg 1x,
+                    ./images/Team-second-PC-2.jpg    2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/Team-second-tablet-1.jpg 1x,
+                    ./images/tablet/Team-second-tablet-2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/Team-second-mobile-1.jpg 1x,
+                    ./images/mobile/Team-second-mobile-2.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  class="our-team__img"
+                  src="./images/mobile/Team-second-mobile-1.jpg"
+                  alt="фотография фронденд разработчика"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="our-team__content">
                 <h3 class="our-team__title">Ольга Репина</h3>
                 <p class="our-team__tex">Frontend Developer</p>
@@ -357,13 +405,37 @@
               </div>
             </li>
             <li class="our-team__item">
-              <img
-                class="our-team__img"
-                src="./images/img-5.jpg"
-                alt="фотография маркетолога"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/nikolay_tarasov_updated.jpg 1x,
+                    ./images/Team-third-PC-2.jpg         2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/Team-third-tablet-1.jpg 1x,
+                    ./images/tablet/Team-third-tablet-2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/Team-third-mobile-1.jpg 1x,
+                    ./images/mobile/Team-third-mobile-2.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  class="our-team__img"
+                  src="./images/mobile/Team-third-mobile-1.jpg"
+                  alt="фотография маркетолога"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="our-team__content">
                 <h3 class="our-team__title">Николай Тарасов</h3>
                 <p class="our-team__tex">Marketing</p>
@@ -412,13 +484,37 @@
               </div>
             </li>
             <li class="our-team__item">
-              <img
-                class="our-team__img"
-                src="./images/img-6.jpg"
-                alt="фотография дизайнера"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mikhail_ermakov_updated.jpg 1x,
+                    ./images/Team-forth-PC-2.jpg         2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/Team-forth-tablet-1.jpg 1x,
+                    ./images/tablet/Team-forth-tablet-2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/Team-forth-mobile-1.jpg 1x,
+                    ./images/mobile/Team-forth-mobile-2.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  class="our-team__img"
+                  src="./images/mobile/Team-forth-mobile-1.jpg"
+                  alt="фотография дизайнера"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="our-team__content">
                 <h3 class="our-team__title">Михаил Ермаков</h3>
                 <p class="our-team__tex">UI Designer</p>

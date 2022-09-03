@@ -74,18 +74,22 @@
     color: var(--second-btn-color);
     font-family: var(--font-family);
     font-style: normal;
-    @include font(18, 1.56, null, 0.03em);
+    @include font(14, 1.56, null, 0.03em);
     /*font-weight: 400;
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;*/
     background-color: rgba(33, 150, 243, 0.9);
-    padding: 63px 24px;
+    padding: 43px 18px;
     transform: translateY(100%);
     transition: transform var(--time) var(--time-function);
     .projects-link:hover &, .projects-link:focus & {
         transform: translateY(0%);
         }
+    @media screen and (min-width: 430px){
+        @include font(18, 1.56, null, 0.03em);
+        padding: 63px 24px;
+    }
     
 }
 

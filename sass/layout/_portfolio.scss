@@ -43,19 +43,20 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    justify-content: center;
+    flex-direction: row;
     
-   
+    
+  
 }
 
 .projects-item {
-  
+  width: 100%;
     @include tablet {
-    flex-basis: calc((100% - 60px) / 2);
+    width: calc((100% - 30px) / 2);
     
     }
     @include desktop {
-    flex-basis: calc((100% - 60px) / 3);
+    width: calc((100% - 60px) / 3);
     }
 }
 
@@ -131,8 +132,8 @@
 
 .projects-link {
     
-    background-color: var(--second-btn-color);
-    border: 1px solid #eeeeee;
+    // background-color: var(--second-btn-color);
+    // border: 1px solid #eeeeee;
     // display: block;
     display: flex;
     flex-direction: column;
@@ -149,8 +150,8 @@
         background: inherit;
         }
 }
-.projects:last-child{
-    @include tablet{
-        justify-content: left;
-    }
-}
+// .projects:last-child{
+//     @include tablet{
+//         justify-content: left;
+//     }
+// }

@@ -1405,17 +1405,20 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: center;
+  flex-direction: row;
 }
 
+.projects-item {
+  width: 100%;
+}
 @media screen and (min-width: 768px) {
   .projects-item {
-    flex-basis: calc((100% - 60px) / 2);
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .projects-item {
-    flex-basis: calc((100% - 60px) / 3);
+    width: calc((100% - 60px) / 3);
   }
 }
 
@@ -1492,8 +1495,6 @@ body {
 }
 
 .projects-link {
-  background-color: var(--second-btn-color);
-  border: 1px solid #eeeeee;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -1505,10 +1506,4 @@ body {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
   background: inherit;
-}
-
-@media screen and (min-width: 768px) {
-  .projects:last-child {
-    justify-content: left;
-  }
 }/*# sourceMappingURL=main.css.map */

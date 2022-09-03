@@ -1,0 +1,44 @@
+/*Work*/
+.work-list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.about-us {
+    padding-top: 0px;
+    @media not screen and (min-width: 1200px){
+        display: none;}
+
+    }
+
+/*.work-title {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}*/
+
+.work-item {
+    position: relative;
+}
+
+.work-text {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    left: 0;
+    @include flex();
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+    @include font(14, 1.14, 700, 0.03em);
+    /*font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;*/
+    text-align: center;
+    /*letter-spacing: 0.03em;*/
+    text-transform: uppercase;
+    color: var(--first-background-color);
+    background-color: var(--background-work-color);
+}

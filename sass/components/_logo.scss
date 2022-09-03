@@ -1,0 +1,41 @@
+/*logo*/
+.logo {
+    text-decoration: none;
+    font-family: var(--font-family-accent);
+    @include font(24, 1.17, 700, null);
+    color: var(--black-color);
+    /*font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;*/
+    text-align: center;
+    display: block;
+    @include desktop{
+        text-align: left;
+        margin-right: 93px;
+        font-size: 26px;
+        line-height: 1.19;
+
+    }
+}
+
+
+.logo__name {
+    color: var(--accent-color);
+}
+
+.footer__logo--color {
+    color: var(--third-title-color);
+    margin-bottom: 20px;
+    
+    @include desktop{
+        
+        margin-right: 0px;
+
+    }
+
+}
+/*.header__logo--color {
+    color: var(--black-color);
+    
+
+}*/

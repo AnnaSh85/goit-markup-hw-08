@@ -1,0 +1,66 @@
+/*hero*/
+.hero {
+    background-color: rgba(196, 196, 196, 1);
+        
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/mobile/Header-img-mobile-1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        flex-grow: 1;
+        padding-top: 118px;
+        padding-bottom: 118px;
+    
+        @include retina {
+            background-image: linear-gradient(rgba(25, 28, 38, 0.2),
+                    rgba(25, 28, 38, 0.2)),
+                url(../images/mobile/Header-img-mobile-2.jpg);
+        }
+    
+        @include tablet {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/tablet/Header-img-tablet-1.jpg);
+    
+            @include retina {
+                background-image: linear-gradient(rgba(25, 28, 38, 0.2),
+                        rgba(25, 28, 38, 0.2)),
+                    url(../images/tablet/Header-img-tablet-2.jpg);
+            }
+        }
+    
+        @include desktop {
+            padding-top: 200px;
+            padding-bottom: 200px;
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/Img_Main_Page.jpg);
+    
+            @include retina {
+                background-image: linear-gradient(rgba(25, 28, 38, 0.2),
+                        rgba(25, 28, 38, 0.2)),
+                    url(../images/Img_Main_Page_2.jpg);
+            }
+        }
+    }
+
+.hero__title {
+    @include font(26, 1.62, 900, 0.06em);
+    /*font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;*/
+    text-align: center;
+    /*letter-spacing: 0.06em;*/
+    text-transform: uppercase;
+    color: var(--third-title-color);
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    @include desktop{
+        font-size: 44px;
+        line-height: 1.36;
+        max-width: 696px;
+    }
+}

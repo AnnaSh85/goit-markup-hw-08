@@ -1,0 +1,14 @@
+.title {
+    @include font(28, 1.17, 700, 0.03em);
+    /*font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;*/
+    text-align: center;
+    /*letter-spacing: 0.03em;*/
+    color: var(--first-btn-color);
+    @include desktop{
+        font-size: 36px;
+    }
+        
+   
+}

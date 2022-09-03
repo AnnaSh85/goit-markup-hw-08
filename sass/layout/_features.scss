@@ -1,0 +1,61 @@
+/*Fetures*/
+.features-title {
+    @include font(14, 1.14, 700, 0.03em);
+    /*font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;*/
+    text-transform: uppercase;
+    color: var(--second-title-color);
+}
+
+.features-text {
+    @include font(14, 1.71, null, 0.03em);
+    /*font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;*/
+}
+
+.features {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.features-item {
+    flex-basis: calc((100% - 90px) / 4);
+    
+}
+
+.features-title {
+    margin-bottom: 10px;
+    text-align: center;
+    @include tablet{
+        text-align: left;}
+    @include desktop{
+        text-align: left
+    }       
+    }
+
+
+.features-bgr {
+    @include flex();
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    width: 450px;
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    
+    @include tablet{
+        width: 354px;
+    }
+
+    @include desktop {
+        width: 270px;
+        }
+}

@@ -1,0 +1,16 @@
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+        @include desktop {
+        padding-top: 94px;
+        padding-bottom: 94px;
+
+    }
+}
+.section__title {
+    margin-bottom: 50px;
+}
+
+.section--background-color {
+    background-color: var(--third-background-color);
+}

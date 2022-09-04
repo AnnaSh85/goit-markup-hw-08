@@ -1,16 +1,29 @@
 /*Clients*/
 .clients-list {
-    @include flex($ai: null);
-    // display: flex;
-    // justify-content: center;
+    
+    display: flex;
+    
     gap: 30px;
     flex-wrap: wrap;
+    @include desktop{
+    
+    justify-content: center 
+    }
 }
 
 .clients-item {
-    width: 170px;
+    
     height: 92px;
     // flex-grow: 1
+    width: calc((100% - 30px) / 2);;
+        
+    
+    @include tablet {
+            width: calc((100% - 60px) / 3);
+        }
+    @include desktop {
+                    width: 170px;
+                }
 }
 
 .clients-link {

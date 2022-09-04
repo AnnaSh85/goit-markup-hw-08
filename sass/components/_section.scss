@@ -8,7 +8,11 @@
     }
 }
 .section__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    
+    @include desktop{
+        margin-bottom: 50px;
+    }
 }
 
 .section--background-color {
